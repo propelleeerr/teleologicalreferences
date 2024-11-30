@@ -11,105 +11,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     
     <style>
-    /* Apply the background image */
-    body {
-        background-image: url('pic/bg.PNG'); 
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        font-family: 'Alice', serif;
-        color: #e6c577;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column; /* Default to vertical stacking for mobile */
-        align-items: center; /* Center content horizontally */
-    }
-
-    /* Container styling */
-    .container {
-        background-color: #08101b;
-        color: #e6c577;
-        padding: 20px;
-        height: auto; /* Allow height to adjust based on content */
-        width: 90%; /* Full width on mobile */
-        margin: 10px 0;
-        overflow-y: auto;
-        border: 5px solid #c8b159;
-        box-sizing: border-box;
-    }
-
-    /* Content styling */
-    .content {
-        text-align: justify;
-    }
-
-    /* Styling for the title (h1) */
-    h1 {
-        font-size: 40px; /* Adjust title size for smaller screens */
-        margin-bottom: 20px;
-    }
-
-    /* Styling for the links */
-    .references {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .references li {
-        margin: 5px 0;
-    }
-
-    .references a {
-        color: #e6c577;
-        text-decoration: none;
-        font-size: 20px; /* Smaller font size for mobile */
-    }
-
-    .references a:hover {
-        color: #ac852d;
-        text-decoration: underline;
-    }
-
-    /* Styling for the image */
-    .right-image {
-        width: 90%; /* Full width on mobile */
-        max-width: 400px; /* Limit max size */
-        height: auto;
-        border: 5px solid #ffedc2;
-        margin: 10px 0;
-    }
-
-    /* Media Query for Larger Screens (Tablets and Desktops) */
-    @media (min-width: 768px) {
+        /* Apply the background image */
         body {
-            flex-direction: row;
-            justify-content: space-between;
+            background-image: url('pic/bg.PNG'); /* Use the correct relative path to your image */
+            background-size: cover; /* Makes sure the image covers the entire screen */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+            font-family: 'Alice', serif; /* Sets the font */
+            color: #e6c577; /* Sets the font color */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ensures the body takes up the full height of the viewport */
         }
 
+        /* Container styling */
         .container {
-            width: 60%;
-            height: 90vh;
-            margin: 5vh;
+    background-color: #08101b; /* Semi-transparent background to allow image to show */
+    color: #e6c577; /* Text color */
+    padding: 40px; /* Padding around the content */
+    height: 90vh; /* Makes the container almost as large as the page, minus padding */
+    box-sizing: border-box; /* Ensures padding is included in the height calculation */
+    margin: 5vh; /* Adds space from the top and bottom */
+    overflow-y: auto; /* Makes content scrollable if needed */
+    border: 5px solid #c8b159; /* Adds a border with the color #c8b159 */
+}
+    
+
+        /* Content styling */
+        .content {
+            text-align: justify; /* Centers the text inside the container */
         }
 
-        .right-image {
-            width: 30%;
-            height: 90vh;
-            margin-top: 5vh;
-            margin-right: 40px;
-        }
-
+        /* Styling for the title (h1) */
         h1 {
-            font-size: 60px;
+            font-size: 60px; /* Makes the title larger */
+            margin-bottom: 80px; /* Adds some space below the title */
+        }
+
+        /* Styling for the links */
+        .references {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .references li {
+            margin: 10px 0;
         }
 
         .references a {
+            color: #e6c577;
+            text-decoration: none;
             font-size: 30px;
         }
-    }
-</style>
+
+        .references a:hover {
+            color: #ac852d; /* Change the hover color to #ac852d */
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -130,6 +89,5 @@
             </ul>
         </div>
     </div>
-    <img src="pic/CLE CT.png" alt="Image" class="right-image"> <!-- Replace with your image path -->
 </body>
 </html>
